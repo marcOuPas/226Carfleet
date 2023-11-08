@@ -32,5 +32,7 @@ namespace Carfleet
             Assert.AreEqual(_model, _truck.Model);
             Assert.AreEqual(_chassisNumber, _truck.ChassisNumber);
         }
+
+
     }
 }
