@@ -6,7 +6,7 @@ namespace Carfleet
     {
         #region private attributes
         string _registration = "VD 123 567";
-        string _brand = "brand";
+        string _brand = "Mercedes-Benz";
         string _model = "Vito";
         string _chassisNumber = "SV30-0169266";
         Car _car;
