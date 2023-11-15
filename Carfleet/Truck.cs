@@ -4,12 +4,14 @@ namespace Carfleet{
     public class Truck:Vehicle
     {
         #region private attributes
+        //TODO ???
         private Boolean _isCarryingGoods = false;
         #endregion private attributes
 
         #region public methods
         public Truck(string registration, string brand, string model, string chassisNumber):base(registration, brand, model, chassisNumber)
         {
+            //TODO ????
         }
 
         public Boolean IsCarryingGoods
