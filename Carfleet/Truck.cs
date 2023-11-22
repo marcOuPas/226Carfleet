@@ -11,7 +11,6 @@ namespace Carfleet{
         #region public methods
         public Truck(string registration, string brand, string model, string chassisNumber):base(registration, brand, model, chassisNumber)
         {
-            //TODO ????
         }
 
         public Boolean IsCarryingGoods
