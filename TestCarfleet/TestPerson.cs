@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Carfleet
 {
-    public class TestDriver
+    public class TestPerson
     {
         #region private attributes
         private string _name = "Einstein";
@@ -11,13 +11,13 @@ namespace Carfleet
         private string _phonenumber = "+41793456789";
         private string _emailaddress = "ae@relativity.org";
         private List<string> _languages = new List<string>();
-        private Driver _driver;
+        private Person _person;
         #endregion private attributes
 
         [SetUp]
         public void Setup()
         {
-            _driver = new Driver(_name, _firstname, _phonenumber, _emailaddress, _languages);
+            _person = new Person(_name, _firstname, _phonenumber, _emailaddress, _languages);
         }
 
         [Test]
@@ -28,7 +28,11 @@ namespace Carfleet
             //when
 
             //then
-
+            Assert.AreEqual(_name, _person.Name);
+            Assert.AreEqual(_firstname, _person.Firstname);
+            Assert.AreEqual(_phonenumber, _person.Phonenumber);
+            Assert.AreEqual(_emailaddress, _person.Emailaddress);
+            Assert.AreEqual(_languages, _person.Language)
         }
     }
 }
