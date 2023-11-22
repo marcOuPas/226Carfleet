@@ -18,7 +18,7 @@ namespace Carfleet
         [SetUp]
         public void Setup()
         {
-            _driver = new Driver(_name, _firstname, _phonenumber, _emailaddress, _workZone, _languages);
+            _driver = new Driver(_name, _firstname, _phonenumber, _emailaddress, _languages, _workZone);
         }
 
         [Test]
